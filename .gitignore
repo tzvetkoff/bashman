@@ -1,0 +1,7 @@
+# MacOS X
+.DS_Store
+._.*
+
+# Just in case
+/tmp/
+/misc/
