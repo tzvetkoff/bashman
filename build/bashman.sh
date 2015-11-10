@@ -1,6 +1,13 @@
 #!/usr/bin/env bash
 
 #
+# Bashman - Pacman & Ghosts drawn in Bash!
+#
+# https://github.com/tzvetkoff/bashman
+#
+
+
+#
 # bashman : left-looking pacman definition
 #
 

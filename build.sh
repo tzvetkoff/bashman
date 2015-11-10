@@ -9,6 +9,7 @@ mkdir -p "${BASHMAN_BASE}/build"
 {
   echo '#!/usr/bin/env bash'
   echo ''
+  cat "${BASHMAN_BASE}/term/header.sh"; echo; echo
   cat "${BASHMAN_BASE}/term/pacman.l.sh"; echo; echo
   cat "${BASHMAN_BASE}/term/pacman.r.sh"; echo; echo
   cat "${BASHMAN_BASE}/term/ghost.l.sh"; echo; echo
