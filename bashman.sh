@@ -5,7 +5,7 @@
 #
 
 # Load all scripts
-BASHMAN_BASE=$(cd $(dirname ${BASH_SOURCE[0]}) && pwd)
+BASHMAN_BASE=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 source "${BASHMAN_BASE}/term/pacman.l.sh"
 source "${BASHMAN_BASE}/term/pacman.r.sh"
 source "${BASHMAN_BASE}/term/ghost.l.sh"

@@ -51,7 +51,7 @@ bashman_append() {
 
   case ${1} in
     # Pacman
-    pacman*left | left*pacman)
+    pacman-left | left-pacman)
       [[ -z ${c} ]] && c='1;33'
       _bashman_1="${_bashman_1}${_bashman_pacman_l_1//@/${c}}"
       _bashman_2="${_bashman_2}${_bashman_pacman_l_2//@/${c}}"
@@ -60,7 +60,7 @@ bashman_append() {
       _bashman_5="${_bashman_5}${_bashman_pacman_l_5//@/${c}}"
       _bashman_6="${_bashman_6}${_bashman_pacman_l_6//@/${c}}"
       ;;
-    pacman*right | right*pacman)
+    pacman-right | right-pacman)
       [[ -z ${c} ]] && c='1;33'
       _bashman_1="${_bashman_1}${_bashman_pacman_r_1//@/${c}}"
       _bashman_2="${_bashman_2}${_bashman_pacman_r_2//@/${c}}"
@@ -70,7 +70,7 @@ bashman_append() {
       _bashman_6="${_bashman_6}${_bashman_pacman_r_6//@/${c}}"
       ;;
     # General ghost
-    ghost*left | left*ghost | ghost)
+    ghost-left | left-ghost | ghost)
       [[ -z ${c} ]] && c='31'
       _bashman_1="${_bashman_1}${_bashman_ghost_l_1//@/${c}}"
       _bashman_2="${_bashman_2}${_bashman_ghost_l_2//@/${c}}"
@@ -79,7 +79,7 @@ bashman_append() {
       _bashman_5="${_bashman_5}${_bashman_ghost_l_5//@/${c}}"
       _bashman_6="${_bashman_6}${_bashman_ghost_l_6//@/${c}}"
       ;;
-    ghost*right | right*ghost)
+    ghost-right | right-ghost)
       [[ -z ${c} ]] && c='31'
       _bashman_1="${_bashman_1}${_bashman_ghost_r_1//@/${c}}"
       _bashman_2="${_bashman_2}${_bashman_ghost_r_2//@/${c}}"
@@ -88,7 +88,7 @@ bashman_append() {
       _bashman_5="${_bashman_5}${_bashman_ghost_r_5//@/${c}}"
       _bashman_6="${_bashman_6}${_bashman_ghost_r_6//@/${c}}"
       ;;
-    ghost*center | center*ghost)
+    ghost-center | center-ghost)
       [[ -z ${c} ]] && c='31'
       _bashman_1="${_bashman_1}${_bashman_ghost_c_1//@/${c}}"
       _bashman_2="${_bashman_2}${_bashman_ghost_c_2//@/${c}}"
@@ -98,83 +98,83 @@ bashman_append() {
       _bashman_6="${_bashman_6}${_bashman_ghost_c_6//@/${c}}"
       ;;
     # Blinky
-    blinky*left | left*blinky | blinky)
+    blinky-left | left-blinky | blinky)
       bashman_append ghost-left red
       ;;
-    blinky*right | right*blinky)
+    blinky-right | right-blinky)
       bashman_append ghost-right red
       ;;
-    blinky*center | center*blinky)
+    blinky-center | center-blinky)
       bashman_append ghost-center red
       ;;
     # Pinky
-    pinky*left | left*pinky | pinky)
+    pinky-left | left-pinky | pinky)
       bashman_append ghost-left magenta
       ;;
-    pinky*right | right*pinky)
+    pinky-right | right-pinky)
       bashman_append ghost-right magenta
       ;;
-    pinky*center | center*pinky)
+    pinky-center | center-pinky)
       bashman_append ghost-center magenta
       ;;
     # Inky
-    inky*left | left*inky | inky)
+    inky-left | left-inky | inky)
       bashman_append ghost-left cyan
       ;;
-    inky*right | right*inky)
+    inky-right | right-inky)
       bashman_append ghost-right cyan
       ;;
-    inky*center | center*inky)
+    inky-center | center-inky)
       bashman_append ghost-center cyan
       ;;
     # Clyde
-    clyde*left | left*clyde | clyde)
+    clyde-left | left-clyde | clyde)
       bashman_append ghost-left yellow
       ;;
-    clyde*right | right*clyde)
+    clyde-right | right-clyde)
       bashman_append ghost-right yellow
       ;;
-    clyde*center | center*clyde)
+    clyde-center | center-clyde)
       bashman_append ghost-center yellow
       ;;
     # Kinky
-    kinky*left | left*kinky | kinky)
+    kinky-left | left-kinky | kinky)
       bashman_append ghost-left light-yellow
       ;;
-    kinky*right | right*kinky)
+    kinky-right | right-kinky)
       bashman_append ghost-right light-yellow
       ;;
-    kinky*center | center*kinky)
+    kinky-center | center-kinky)
       bashman_append ghost-center light-yellow
       ;;
     # Funky
-    funky*left | left*funky | funky)
+    funky-left | left-funky | funky)
       bashman_append ghost-left green
       ;;
-    funky*right | right*funky)
+    funky-right | right-funky)
       bashman_append ghost-right green
       ;;
-    funky*center | center*funky)
+    funky-center | center-funky)
       bashman_append ghost-center green
       ;;
     # Spunky
-    spunky*left | left*spunky | spunky)
+    spunky-left | left-spunky | spunky)
       bashman_append ghost-left light-gray
       ;;
-    spunky*right | right*spunky)
+    spunky-right | right-spunky)
       bashman_append ghost-right light-gray
       ;;
-    spunky*center | center*spunky)
+    spunky-center | center-spunky)
       bashman_append ghost-center light-gray
       ;;
     # Spooky
-    spooky*left | left*spooky | spooky)
+    spooky-left | left-spooky | spooky)
       bashman_append ghost-left dark-gray
       ;;
-    spooky*right | right*spooky)
+    spooky-right | right-spooky)
       bashman_append ghost-right dark-gray
       ;;
-    spooky*center | center*spooky)
+    spooky-center | center-spooky)
       bashman_append ghost-center dark-gray
       ;;
   esac
